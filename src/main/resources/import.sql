@@ -1,9 +1,48 @@
 
 -- Inicializamos la BD
-
-
-INSERT INTO Tea (id_tea, tea, estado) VALUES ('1', '99.90%','1');
-INSERT INTO Tea (id_tea, tea, estado) VALUES ('1', '95.90%','1');
-INSERT INTO Tea (id_tea, tea, estado) VALUES ('1', '90.90%','1');
-INSERT INTO Tipocambio (id, valor) VALUES (1, 3.33);
-INSERT INTO Tipocambio (id, valor) VALUES (2, 3.74);
+INSERT INTO Tea (id_tea, tea, estado) VALUES (1, '99.90%',1);
+INSERT INTO Tea (id_tea, tea, estado) VALUES (2,'95.90%',1);
+INSERT INTO Tea (id_tea, tea, estado) VALUES (3,'90.90%',1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (1,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (2,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (3,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (4,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (5,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (6,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (7,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (8,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (9,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (10,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (11,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (12,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (13,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (14,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (15,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (16,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (17,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (18,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (19,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (20,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (21,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (22,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (23,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (24,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (25,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (26,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (27,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (28,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (29,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (30,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (31,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (32,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (33,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (34,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (35,1);
+INSERT INTO Cuotas (id_cuotas, estado) VALUES (36,1);
+INSERT INTO Dias (id_dias, dia, estado) VALUES (1, 5,1);
+INSERT INTO Dias (id_dias, dia, estado) VALUES (2, 20,1);
+INSERT INTO Cliente (id_cliente, dni, nombre,apellidos,estado) VALUES (1, 45664829,'Gustavo','Osorio',1);
+INSERT INTO Cliente (id_cliente, dni, nombre,apellidos,estado) VALUES (2, 45664820,'Pedro','Gomez',1);
+INSERT INTO Tarjeta (id_tarjeta, id_cliente, tarjeta,num_tarjeta,estado) VALUES (1, 1,'Clasica',12345678123456,1);
+INSERT INTO Tarjeta (id_tarjeta, id_cliente, tarjeta,num_tarjeta,estado) VALUES (2, 1,'Oro',12345678123456,1);
+INSERT INTO Tarjeta (id_tarjeta, id_cliente, tarjeta,num_tarjeta,estado) VALUES (3, 1,'Back',12345678123456,1);
