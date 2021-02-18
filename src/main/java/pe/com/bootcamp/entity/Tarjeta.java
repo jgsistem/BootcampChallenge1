@@ -6,6 +6,7 @@ public class Tarjeta {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id_tarjeta;
+
   private long id_cliente;
   private String tarjeta;
   private Integer num_tarjeta;
