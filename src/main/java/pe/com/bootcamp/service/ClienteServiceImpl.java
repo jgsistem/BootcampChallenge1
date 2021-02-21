@@ -16,4 +16,11 @@ public class ClienteServiceImpl implements ClienteService {
   public List<Cliente> findAll() {
     return clienteServiceRepository.findAll();
   }
+
+  @Override
+  public Cliente getClienteDni(Integer dni) {
+    Cliente cliente = clienteServiceRepository.findByDni(dni);
+    return cliente;
+  }
+
 }

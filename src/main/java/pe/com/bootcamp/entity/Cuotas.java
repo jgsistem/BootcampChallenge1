@@ -5,15 +5,15 @@ import javax.persistence.*;
 public class Cuotas {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long id_cuotas;
+  private long idcuotas;
   private Integer estado;
 
-  public long getId_cuotas() {
-    return id_cuotas;
+  public long getIdcuotas() {
+    return idcuotas;
   }
 
-  public void setId_cuotas(long id_cuotas) {
-    this.id_cuotas = id_cuotas;
+  public void setIdcuotas(long idcuotas) {
+    this.idcuotas = idcuotas;
   }
 
   public Integer getEstado() {

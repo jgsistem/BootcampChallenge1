@@ -1,24 +1,24 @@
 package pe.com.bootcamp.entity;
 import javax.persistence.*;
+import pe.com.bootcamp.common.RequestBaseDto;
 
 @Entity
-public class Cliente {
+public class Cliente extends RequestBaseDto {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long id_cliente;
+  private long idcliente;
   private Integer dni;
   private String nombre;
   private String apellidos;
   private Integer estado;
 
-
-
-  public long getId_cliente() {
-    return id_cliente;
+  public long getIdcliente() {
+    return idcliente;
   }
 
-  public void setId_cliente(long id_cliente) {
-    this.id_cliente = id_cliente;
+  public void setIdcliente(long idcliente) {
+    this.idcliente = idcliente;
   }
 
   public Integer getDni() {
@@ -52,4 +52,7 @@ public class Cliente {
   public void setEstado(Integer estado) {
     this.estado = estado;
   }
+
+
+
 }

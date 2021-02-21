@@ -3,30 +3,30 @@ import javax.persistence.*;
 
 @Entity
 public class Tarjeta {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long id_tarjeta;
+  private long idtarjeta;
 
-  private long id_cliente;
+  private long idcliente;
   private String tarjeta;
-  private String num_tarjeta;
+  private String numtarjeta;
   private Integer estado;
 
-
-  public long getId_tarjeta() {
-    return id_tarjeta;
+  public long getIdtarjeta() {
+    return idtarjeta;
   }
 
-  public void setId_tarjeta(long id_tarjeta) {
-    this.id_tarjeta = id_tarjeta;
+  public void setIdtarjeta(long idtarjeta) {
+    this.idtarjeta = idtarjeta;
   }
 
-  public long getId_cliente() {
-    return id_cliente;
+  public long getIdcliente() {
+    return idcliente;
   }
 
-  public void setId_cliente(long id_cliente) {
-    this.id_cliente = id_cliente;
+  public void setIdcliente(long idcliente) {
+    this.idcliente = idcliente;
   }
 
   public String getTarjeta() {
@@ -37,12 +37,12 @@ public class Tarjeta {
     this.tarjeta = tarjeta;
   }
 
-  public String getNum_tarjeta() {
-    return num_tarjeta;
+  public String getNumtarjeta() {
+    return numtarjeta;
   }
 
-  public void setNum_tarjeta(String num_tarjeta) {
-    this.num_tarjeta = num_tarjeta;
+  public void setNumtarjeta(String numtarjeta) {
+    this.numtarjeta = numtarjeta;
   }
 
   public Integer getEstado() {

@@ -5,16 +5,16 @@ import javax.persistence.*;
 public class Dias {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long id_dias;
+  private long iddias;
   private Integer dia;
   private Integer estado;
 
-  public long getId_dias() {
-    return id_dias;
+  public long getIddias() {
+    return iddias;
   }
 
-  public void setId_dias(long id_dias) {
-    this.id_dias = id_dias;
+  public void setIddias(long iddias) {
+    this.iddias = iddias;
   }
 
   public Integer getDia() {

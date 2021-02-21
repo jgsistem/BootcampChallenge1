@@ -5,16 +5,16 @@ import javax.persistence.*;
 public class Tea {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long id_tea;
+  private long idtea;
   private String tea;
   private Integer estado;
 
-  public long getId_tea() {
-    return id_tea;
+  public long getIdtea() {
+    return idtea;
   }
 
-  public void setId_tea(long id_tea) {
-    this.id_tea = id_tea;
+  public void setIdtea(long idtea) {
+    this.idtea = idtea;
   }
 
   public String getTea() {

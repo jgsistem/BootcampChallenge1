@@ -15,4 +15,14 @@ public class TarjetaServiceImpl implements TarjetaService {
   public List<Tarjeta> findAll()  {
         return tarjetaRepository.findAll();
   }
+
+  @Override
+  public Tarjeta getTarjetaIdcliente(long idcliente) {
+    return tarjetaRepository.findByIdcliente(idcliente);
+  }
+
+  @Override
+  public Tarjeta getTarjetaIdtarjeta(long idtarjeta) {
+    return tarjetaRepository.findByIdtarjeta(idtarjeta);
+  }
 }
