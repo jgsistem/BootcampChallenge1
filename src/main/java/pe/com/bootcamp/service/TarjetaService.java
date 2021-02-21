@@ -1,7 +1,7 @@
 package pe.com.bootcamp.service;
-
-import java.util.Map;
+import java.util.List;
+import pe.com.bootcamp.entity.Tarjeta;
 
 public interface TarjetaService {
-  public Map<String, Object> getTarjetaMap();
+      List<Tarjeta> findAll();
 }

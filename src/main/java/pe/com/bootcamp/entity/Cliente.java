@@ -11,6 +11,8 @@ public class Cliente {
   private String apellidos;
   private Integer estado;
 
+
+
   public long getId_cliente() {
     return id_cliente;
   }

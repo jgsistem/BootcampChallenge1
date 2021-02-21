@@ -9,8 +9,9 @@ public class Tarjeta {
 
   private long id_cliente;
   private String tarjeta;
-  private Integer num_tarjeta;
+  private String num_tarjeta;
   private Integer estado;
+
 
   public long getId_tarjeta() {
     return id_tarjeta;
@@ -36,11 +37,11 @@ public class Tarjeta {
     this.tarjeta = tarjeta;
   }
 
-  public Integer getNum_tarjeta() {
+  public String getNum_tarjeta() {
     return num_tarjeta;
   }
 
-  public void setNum_tarjeta(Integer num_tarjeta) {
+  public void setNum_tarjeta(String num_tarjeta) {
     this.num_tarjeta = num_tarjeta;
   }
 
