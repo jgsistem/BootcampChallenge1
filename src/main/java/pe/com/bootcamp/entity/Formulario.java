@@ -1,5 +1,5 @@
 package pe.com.bootcamp.entity;
-
+import java.util.Date;
 import pe.com.bootcamp.common.RequestBaseDto;
 
 public class Formulario extends RequestBaseDto {
@@ -7,15 +7,25 @@ public class Formulario extends RequestBaseDto {
   private String tarjeta;
   private String moneda;
   private Integer monto;
-  private Integer cuota;
-  private double tea;
+  private double cuota;
+  private String tea;
   private Integer diapago;
+  private String fechacompra;
 
   private String primeracuota;
   private String estado;
 
+
   public Integer getDni() {
     return dni;
+  }
+
+  public String getFechacompra() {
+    return fechacompra;
+  }
+
+  public void setFechacompra(String fechacompra) {
+    this.fechacompra = fechacompra;
   }
 
   public void setDni(Integer dni) {
@@ -46,19 +56,19 @@ public class Formulario extends RequestBaseDto {
     this.monto = monto;
   }
 
-  public Integer getCuota() {
+  public double getCuota() {
     return cuota;
   }
 
-  public void setCuota(Integer cuota) {
+  public void setCuota(double cuota) {
     this.cuota = cuota;
   }
 
-  public double getTea() {
+  public String getTea() {
     return tea;
   }
 
-  public void setTea(double tea) {
+  public void setTea(String tea) {
     this.tea = tea;
   }
 
