@@ -34,9 +34,14 @@ public class FormularioServiceImpl implements FormularioService {
    {
      Tarjeta tarjeta = tarjetaRepository.findByIdcliente(cliente.getIdcliente());
        if (tarjeta.getTarjeta().equals(formulario.getTarjeta())){
+         Double Tem, Frc,Cuota,Importe;
          newormulario.setDni(formulario.getDni());
          newormulario.setTarjeta(formulario.getTarjeta());
-         newormulario.setCuota((formulario.getMonto() * Double.parseDouble(constants.quitarValor(formulario.getTea()))/100));
+         Tem = Math.pow((1 + (Double.parseDouble(constants.quitarValor(formulario.getTea())))/100),0.0833333333333333) - 1;
+         Frc = (Tem*(Math.pow(1 + Tem,formulario.getCuota())))/ (Math.pow(1+Tem,formulario.getCuota())-1);
+         Cuota = Frc * formulario.getMonto();
+         Importe = Cuota + Cuota*(0.005/100);
+         newormulario.setCuota(Math.round(Importe*100.0)/100.0);
          newormulario.setMoneda(formulario.getMoneda());
          newormulario.setTea(formulario.getTea());
          newormulario.setPrimeracuota(constants.convertFecha(formulario.getFechacompra()));
