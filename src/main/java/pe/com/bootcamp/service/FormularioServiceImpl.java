@@ -36,10 +36,10 @@ public class FormularioServiceImpl implements FormularioService {
        if (tarjeta.getTarjeta().equals(formulario.getTarjeta())){
          newormulario.setDni(formulario.getDni());
          newormulario.setTarjeta(formulario.getTarjeta());
-         newormulario.setCuota((formulario.getMonto() * Double.parseDouble(constants.quitarValor(formulario.getTea()))));
+         newormulario.setCuota((formulario.getMonto() * Double.parseDouble(constants.quitarValor(formulario.getTea()))/100));
          newormulario.setMoneda(formulario.getMoneda());
          newormulario.setTea(formulario.getTea());
-         newormulario.setPrimeracuota(constants.devolverFecha());
+         newormulario.setPrimeracuota(constants.convertFecha(formulario.getFechacompra()));
          newormulario.setEstado("exitoso");
        }
        else

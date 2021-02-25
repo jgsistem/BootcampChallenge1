@@ -1,4 +1,6 @@
 package pe.com.bootcamp.controller;
+import java.util.HashMap;
+import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -26,8 +28,13 @@ public class FormularioController {
   public ResponseEntity<Object> simulacion(@RequestBody Formulario formulario) throws Exception{
     boolean status = false;
     try {
-         Formulario newformulario = formularioService.simulacion(formulario);
-      return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(newformulario);
+      Formulario newformulario = formularioService.simulacion(formulario);
+      Map result = new HashMap();
+      result.put("cuota",newformulario.getCuota());
+      result.put("moneda",newformulario.getMoneda());
+      result.put("primeraCuota",newformulario.getPrimeracuota());
+      result.put("estado",newformulario.getEstado());
+       return ResponseEntity.ok(result);
     } catch (IllegalArgumentException ex) {
       return new ResponseEntity<Object>(apiResponseHandler.getApplicationError(ex.getMessage()),
           HttpStatus.BAD_REQUEST);

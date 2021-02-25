@@ -1,8 +1,7 @@
 package pe.com.bootcamp.entity;
 import java.util.Date;
-import pe.com.bootcamp.common.RequestBaseDto;
 
-public class Formulario extends RequestBaseDto {
+public class Formulario {
   private Integer dni;
   private String tarjeta;
   private String moneda;
@@ -11,19 +10,15 @@ public class Formulario extends RequestBaseDto {
   private String tea;
   private Integer diapago;
   private String fechacompra;
-
   private String primeracuota;
   private String estado;
-
 
   public Integer getDni() {
     return dni;
   }
-
   public String getFechacompra() {
     return fechacompra;
   }
-
   public void setFechacompra(String fechacompra) {
     this.fechacompra = fechacompra;
   }
